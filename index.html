@@ -1,63 +1,113 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Emily Huang</title>
     <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="styles/normalize-fwd.css">
-    <link rel="stylesheet" href="styles/main.css">
-</head>
-<body>
+    <link rel="stylesheet" href="styles/normalize-fwd.css" />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
     <header>
-        <p>emimi</p>
-        <nav>
-            <ul>
-                <li><a href="#about">about</a></li>
-                <li><a href="#projects">projects</a></li>
-            </ul>
-        </nav>
-    </header>                
+      <nav id="menu-flex">
+        <a href="index.html" id="logo">Emimi</a>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+        </ul>
+      </nav>
+    </header>
     <main>
-        <p>Hello, my name is</p>
-        <h1>Emily Huang:</h1>
-        <p>a front-end web developer and designer, gamer, and lover of everything cat-themed. Check out some <a href="#projects">projects</a> I've been working on!</p>
+      <div id="site-wrapper">
+        <p id="tag-line">Hello, my name is</p>
+        <h1>Emily Huang.</h1>
+        <p>
+          I'm a front-end web developer and designer, gamer, and lover of
+          everything cat-themed. Check out some
+          <a href="#projects">projects</a> I've been working on!
+        </p>
 
         <!-- About Section -->
         <section id="about">
-            <h2>About Me</h2>
-            <img src="images/profile.jpg" alt="Picture of Emily">
-            <p>I’m currently a <strong>front-end web developer student at BCIT (British Columbia Institute of Technology)</strong>.  I previously studied at SFU (Simon Fraser University), obtaining a Bachelor of Science in Interactive Arts and Technology, with a minor in Computer Science.  My <strong>7 years (and counting!) at Tim Hortons</strong> specializing in training employees and providing elevated customer service combined with my academic experience allows me to better understand user needs and pain points in everyday life, helping me to develop user-driven websites.</p>
+          <h2>About Me</h2>
+          <div class="flex-layout">
+            <div class="flex-img">
+              <img
+                id="profile"
+                src="images/profile.webp"
+                alt="Picture of Emily"
+              />
+            </div>
+            <div class="flex-text">
+              <p>
+                I’m currently a
+                <strong
+                  >front-end web developer student at
+                  <abbr title="British Columbia Institute of Technology"
+                    >BCIT</abbr
+                  ></strong
+                >. I previously studied at
+                <abbr title="Simon Fraser University">SFU</abbr>, obtaining a
+                Bachelor of Science in Interactive Arts and Technology, with a
+                minor in Computer Science.
+              </p>
+
+              <p>
+                My
+                <strong>7 years (and counting!) at Tim Hortons</strong>
+                specializing in training employees and providing elevated
+                customer service combined with my academic experience allows me
+                to better understand user needs and pain points in everyday
+                life, helping me to develop user-driven websites.
+              </p>
+            </div>
+          </div>
         </section>
         <!-- End of About Section -->
 
         <!-- Projects Section -->
         <section id="projects">
-            <h2>Projects</h2>
-            <section id="country-site">
-                <h3>Country Website</h3>
+          <h2>Projects</h2>
+          <div class="flex-layout">
+            <section id="country-site" class="project-card">
+              <h3>Country Website</h3>
+              <img src="images/coming-soon.jpg" alt="Placeholder image" />
             </section>
-            <section id="business-site">
-                <h3>Business Website</h3>
+            <section id="business-site" class="project-card">
+              <h3>Business Website</h3>
+              <img src="images/coming-soon.jpg" alt="Placeholder image" />
             </section>
-            <section id="js-game">
-                <h3>JavaScript Game</h3>
+            <section id="js-game" class="project-card">
+              <h3>JavaScript Game</h3>
+              <img src="images/coming-soon.jpg" alt="Placeholder image" />
             </section>
-            <section id="movie-db">
-                <h3>Movid Database</h3>
+            <section id="movie-db" class="project-card">
+              <h3>Movid Database</h3>
+              <img src="images/coming-soon.jpg" alt="Placeholder image" />
             </section>
-            <section id="vancouver-wp-site">
-                <h3>Vancouver Wordpress Site</h3>
+            <section id="vancouver-wp-site" class="project-card">
+              <h3>Vancouver Wordpress Site</h3>
+              <img src="images/coming-soon.jpg" alt="Placeholder image" />
             </section>
+          </div>
         </section>
         <!-- End of Projects Section -->
+      </div>
     </main>
     <footer>
-        <p>Connect with me!</p>
-        <p>hello@emimi.ca</p>
-        <a href="#">LinkedIn</a>
-        <a href="">GitHub</a>
-        <p>&copy; 2025 Emily Huang FWD.</p>
-</body>
+      <p>Connect with me!</p>
+      <p>hello@emimi.ca</p>
+      <a href="#">LinkedIn</a>
+      <a href="">GitHub</a>
+      <p>&copy; 2025 Emily Huang FWD.</p>
+    </footer>
+  </body>
 </html>

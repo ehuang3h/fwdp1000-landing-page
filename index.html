@@ -19,7 +19,7 @@
     <header>
       <nav id="menu-flex">
         <a href="index.html" id="logo">Emimi</a>
-        <ul>
+        <ul id="nav-bar">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
         </ul>
@@ -32,7 +32,7 @@
         <p>
           I'm a front-end web developer and designer, gamer, and lover of
           everything cat-themed. Check out some
-          <a href="#projects">projects</a> I've been working on!
+          <a href="#projects" class="inline-a">projects</a> I've been working on!
         </p>
 
         <!-- About Section -->
@@ -103,11 +103,23 @@
       </div>
     </main>
     <footer>
-      <p>Connect with me!</p>
-      <p>hello@emimi.ca</p>
-      <a href="#">LinkedIn</a>
-      <a href="">GitHub</a>
-      <p>&copy; 2025 Emily Huang FWD.</p>
+      <p>Connect with me at: <a href="mailto:hello@emimi.ca" class="inline-a">hello@emimi.ca</a> or</p>
+      <nav class="nav-flex">
+        <!-- linkedin -->
+        <a href="#" class="social-media-logo">
+          <svg viewbox="-3 0 30 30">
+            <path d="M 20.5 2 h -17 A 1.5 1.5 0 0 0 2 3.5 v 17 A 1.5 1.5 0 0 0 3.5 22 h 17 a 1.5 1.5 0 0 0 1.5 -1.5 v -17 A 1.5 1.5 0 0 0 20.5 2 Z M 8 19 H 5 v -9 h 3 Z M 6.5 8.25 A 1.75 1.75 0 1 1 8.3 6.5 a 1.78 1.78 0 0 1 -1.8 1.75 Z M 19 19 h -3 v -4.74 c 0 -1.42 -0.6 -1.93 -1.38 -1.93 A 1.74 1.74 0 0 0 13 14.19 a 0.66 0.66 0 0 0 0 0.14 V 19 h -3 v -9 h 2.9 v 1.3 a 3.11 3.11 0 0 1 2.7 -1.4 c 1.55 0 3.36 0.86 3.36 3.66 Z"></path>
+          </svg>
+        </a>
+        <!-- github -->
+        <a href="https://github.com/ehuang3h" class="social-media-logo">
+          <svg viewbox="-3 0 30 30">
+            <path d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z"></path>
+          </svg>
+        </a>
+
+      </nav>
+      <p id="copyright">&copy; 2025 Emily Huang FWD.</p>
     </footer>
   </body>
 </html>

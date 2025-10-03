@@ -9,6 +9,7 @@
 	- Header
 	- Main
 	- Footer
+# MEDIA QUERIES
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -22,7 +23,7 @@ body {
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
-  background-color: #0B052D;
+  background-color: #0b052d;
   color: #e3deff;
 }
 
@@ -41,11 +42,18 @@ h2 {
 }
 
 h1 {
+  font-size: 4rem;
   margin: 0;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.5rem;
 }
 
 h3 {
-  color: #0B052D;
+  font-size: 1.25rem;
+  color: #0b052d;
 }
 
 p {
@@ -54,20 +62,21 @@ p {
 }
 
 strong {
-	font-weight: 800;
+  font-weight: 800;
 }
 
 /* Elements
 --------------------------------------------- */
 img {
   width: 100%;
+  max-width: 40rem;
   height: auto;
   margin: 1rem 0;
   display: block;
 }
 
 ul {
-	margin: 0;
+  margin: 0;
   padding: 0;
 }
 
@@ -90,7 +99,7 @@ path {
 /* Links
 --------------------------------------------- */
 a {
-  color: #93EEFF;
+  color: #93eeff;
   text-decoration: none;
   text-transform: lowercase;
   font-weight: 600;
@@ -100,7 +109,7 @@ a {
 }
 
 a:visited {
-  color: #93EEFF;
+  color: #93eeff;
 }
 
 a:hover {
@@ -108,13 +117,12 @@ a:hover {
 }
 
 a:focus {
-  border: solid 2px #93EEFF;
+  border: solid 2px #93eeff;
 }
 
 a:active {
-  background-color: #93EEFF;
-  color: #0B052D;
-
+  background-color: #93eeff;
+  color: #0b052d;
 }
 
 /*--------------------------------------------------------------
@@ -127,18 +135,19 @@ a:active {
 /* Header
 --------------------------------------------- */
 /* General Header */
-header, footer{
-	padding: 1rem 2rem;
+header,
+footer {
+  padding: 1rem 2rem;
 }
 
 header {
-	box-shadow: 0 2px 100px #040117;
-	margin-bottom: 2rem;
+  box-shadow: 0 2px 100px #040117;
+  margin-bottom: 2rem;
 }
 
 #header-flex {
-	display: flex;
-	justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 #menu-flex {
@@ -149,8 +158,8 @@ header {
 
 /* Logo */
 #logo {
-	text-transform: lowercase;
-	font-weight: 600;
+  text-transform: lowercase;
+  font-weight: 600;
   color: #e3deff;
   opacity: 100%;
   font-size: 1.5rem;
@@ -170,20 +179,22 @@ header {
   z-index: 100;
 }
 
+#nav-bar a {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+}
+
 /* Main
 --------------------------------------------- */
 /* General */
 #site-wrapper {
-  max-width: 120rem;
+  max-width: 75rem;
   margin: 0 auto;
   padding: 0 2rem;
 }
 
-.flex-layout {
-	display: flex;
-	flex-direction: column;
-	gap: 1rem;
-	justify-content: space-around;
+.flex-layout div {
+  width: fit-content;
 }
 
 /* Landing Area */
@@ -204,24 +215,28 @@ header {
 
 /* Projects */
 .project-card {
-  background-color: #93EEFF;
-  opacity: 70%;
+  background-color: #93eeff;
+  
   padding: 1rem;
   max-width: 20rem;
   border-radius: 2%;
   margin-top: 0.5rem;
 }
 
-.project-card:hover {
-  opacity: 100%;
+.flex-layout div {
+  width: fit-content;
+}
+
+#featured-text {
+  color: #040117;
 }
 
 /* Footer
 --------------------------------------------- */
 footer {
-	margin-top: 2rem;
-	box-shadow: 0px -2px 100px #040117;
-  padding-bottom: 5rem;
+  margin-top: 2rem;
+  box-shadow: 0px -2px 100px #040117;
+  padding-bottom: 4rem;
 }
 
 svg {
@@ -237,9 +252,78 @@ svg {
 }
 
 #copyright {
-  margin-top: 2rem;
+  margin-top: 5rem;
+  opacity: 50%;
 }
 
 /*--------------------------------------------------------------
 # END OF LAYOUTS
+--------------------------------------------------------------*/
+/*--------------------------------------------------------------
+# START OF MEDIA QUERIES
+--------------------------------------------------------------*/
+@media (min-width: 40em) {
+  /* HEADER */
+  #nav-bar {
+    position: static;
+    justify-content: flex-end;
+    background-color: #0b052d;
+  }
+
+  #nav-bar a {
+    font-size: 1.25rem;
+  }
+
+  /* MAIN */
+  .flex-layout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+    margin: 0 auto;
+  }
+
+  #flex-about {
+    justify-content: center;
+    gap: 3rem;
+    align-items: center;
+  }
+
+  #country-site h3 {
+    font-size: 2rem;
+  }
+
+  #country-site {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+    flex: 1 1 100%;
+    padding: 2rem;
+    align-items: flex-end;
+    gap: 2rem;
+  }
+
+  /* FOOTER */
+  footer {
+    padding-bottom: 1rem;
+  }
+  #copyright {
+    display: flex;
+    justify-self: center;
+  }
+}
+
+/* resizing featured section p */
+@media (min-width: 65em) {
+  #country-site p {
+    width: 13rem;
+  }
+}
+
+@media (min-width: 75em) {
+  #country-site p {
+    width: 20rem;
+  }
+}
+/*--------------------------------------------------------------
+# END OF MEDIA QUERIES
 --------------------------------------------------------------*/
